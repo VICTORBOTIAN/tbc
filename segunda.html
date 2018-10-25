@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <title>Fase 2 diseño web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-widht">
+    <meta name="description" content="Administracion de bases de datos">
+    <meta name="keywords" content="Administracion de bases de datos">
+    <meta name="author" content="grupo colaborativo">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <div id="marca">
+          <h1><span class="resaltado">ADMINISTRACION</span> de bases de datos</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="actual"><a href="lecturas.html">Lecturas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="autores.html">Autores</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="boletin">
+      <div class="contenedor">
+        <h1>Suscribete para mas informacion</h1>
+        <form>
+          <input type="email" name="email" placeholder="Ingrese el email">
+          <button type="submit" class="boton1">Suscribirse</button>
+        </form>
+      </div>
+    </section>
+    <div class="nuevo">
+      <ul class="navi">
+        <li><a href="maslecturas.html">Mas lecturas</a><ul>
+            <li><a href="primera.html">Primera</a></li>
+            <li><a href="segunda.html">Segunda</a></li>
+            <li><a href="tercera.html">Tercera</a></li>
+            <li><a href="cuarta.html">Cuarta</a></li>
+        </ul>
+        </li>
+
+      </ul>
+    </div>
+<section id="main">
+  <div class="contenedor">
+    <article id="main-col">
+
+
+      <h2>FUNCIONES DE UN DBMS</h2>
+
+
+
+        <p>Siendo entonces la Base de datos una colección de archivos
+interrelacionados creados con un DBMS. El contenido de una base de
+datos esta almacenada de tal manera que los datos estén disponibles
+para los usuarios, una finalidad de la base de datos es eliminar la
+redundancia o al menos minimizarla.
+<br/>
+<br/>
+Como ya se ha establecido la DB no es, en si un cúmulo de información,
+sino solo un “almacén” de datos, lo que ha hecho indispensable el
+desarrollo de sistemas que los administren y procesen, siendo estos los
+DBMS
+<br/>
+<br/>
+El propósito general de los DBMS es el de manejar de manera clara,
+sencilla y ordenada a los datos de una Base de Datos (DB) que
+posteriormente se convertirán en información relevante, para un buen
+manejo de los datos.
+<br/>
+<br/>
+Existen distintas funciones que deben cumplir los DBMS:
+<br/>
+<br/>
+• Abstracción de los datos. Los DBMS ahorran a los usuarios
+detalles acerca del almacenamiento físico de los datos. Da lo
+mismo si una base de datos ocupa uno o cientos de archivos, este
+hecho se hace transparente al usuario. Así, se definen varios
+niveles de abstracción.
+<br/>
+<br/>
+• Independencia. La independencia de los datos consiste en la
+capacidad de modificar el esquema (físico o lógico) de una base de
+datos sin tener que realizar cambios en las aplicaciones que se
+sirven de ella.
+<br/>
+<br/>
+• Consistencia. En aquellos casos en los que no se ha logrado
+eliminar la redundancia, será necesario vigilar que aquellos datos
+que aparecen repetidos se actualice de forma coherente, es decir,
+que todos los datos repetidos se actualicen de forma simultánea.
+Por otra parte, la base de datos representa una realidad
+determinada que tiene determinadas condiciones, por ejemplo, que
+los menores de edad no pueden tener licencia de conducir. El
+sistema no debería aceptar datos de un conductor menor de edad.
+En los DBMS existen herramientas que facilitan la programación de
+este tipo de condiciones.
+<br/>
+<br/>
+• Seguridad. Los datos almacenados en una base de datos pueden
+llegar a tener un gran valor. Los DBMS deben garantizar que estos
+datos se encuentren seguros frente a usuarios malintencionados,
+que intenten leer datos privilegiados; frente a ataques que deseen
+manipular o destruir los datos; o simplemente ante las torpezas de
+algún usuario autorizado pero despistado. Normalmente, los DBMS
+disponen de un complejo sistema de permisos a usuarios y grupos
+de usuarios, que permiten otorgar diversas categorías de
+permisos.
+<br/>
+<br/>
+• Integridad. Se trata de adoptar las medidas necesarias para
+garantizar la validez de los datos almacenados. Es decir, se trata
+de proteger los datos ante fallos de hardware, datos introducidos
+por usuarios descuidados, o cualquier otra circunstancia capaz de
+corromper los datos almacenados. Los DBMS proveen
+mecanismos para garantizar la recuperación de la base de datos
+hasta un estado consistente (ver Consistencia, más arriba)
+conocido en forma automática.
+<br/>
+<br/>
+• Respaldo. Los DBMS deben proporcionar una forma eficiente de
+realizar copias de respaldo de los datos almacenados y de
+restaurar a partir de estas copias los datos que se hayan podido
+perder.
+<br/>
+<br/>
+• Control de la concurrencia. En la mayoría de entornos (excepto
+quizás el doméstico), lo más habitual es que sean muchas las
+personas que acceden a una base de datos, bien para recuperar
+datos, bien para almacenarla. Y es también frecuente que dichos
+accesos se realicen de forma simultánea. Así pues, un DBMS debe
+controlar este acceso concurrente a la DB, que podría derivar en
+inconsistencias.
+<br/>
+<br/>
+• Manejo de Transacciones. Una Transacción es un programa que
+se ejecuta como una sola operación. Esto quiere decir que el
+estado luego de una ejecución en la que se produce una falla es el
+mismo que se obtendría si el programa no se hubiera ejecutado.
+Los DBMS proveen mecanismos para programar las
+modificaciones de los datos de una forma mucho más simple que
+si no se dispusiera de ellos.
+<br/>
+<br/>
+• Tiempo de respuesta. Lógicamente, es deseable minimizar el
+tiempo que el DBMS tarda en darnos la información solicitada y en
+almacenar los cambios realizados.
+</p>
+
+
+
+    </article>
+
+
+  </div>
+
+</section>
+
+    <footer>
+  <img src="img/Bibliografia.JPG" width="300" height="350">
+    </footer>
+  </body>
+</html>

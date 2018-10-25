@@ -1,0 +1,184 @@
+body{
+  font: 15px arial,helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:#125893;
+}
+
+.contenedor{
+
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+
+}
+
+ul{
+  margin: 0;
+  padding:0;
+}
+
+.boton1{
+  height: 38px;
+  background-color: #D4A402;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:#fff;
+}
+
+
+header{
+  background: #125893;
+  color:#D4A402;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom:  5px solid #D4A402;
+
+
+}
+
+header a{
+  color: #D4A402;
+  text-decoration: none;
+
+  font-size: 16px;
+  list-style: none;
+
+}
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca{
+  float: left;
+
+}
+
+header #marca h1{
+  margin: 0;
+
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+
+}
+
+header.resaltado, header.actual a{
+  color:#D4A402;
+  font-weight: bold;
+
+
+}
+
+header a:hover{
+  color: red;
+  font-weight: bold;
+
+}
+
+
+
+#cabecera{
+  min-height: 400px;
+  background: url('../img/ball.jpg');
+  text-align: center;
+  color: yellow;
+  font-weight: bold;
+}
+#cabecera h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#cabecera p{
+  font-size: 20px;
+}
+
+#boletin{
+  padding: 15px;
+  color: black;
+  background: white;
+}
+
+#boletin h1{
+  float: left;
+
+}
+
+#boletin form{
+  float: right;
+  margin-top: 15px;
+}
+
+#cajas{
+  margin-top: 20px;
+}
+#cajas .caja{
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+#cajas .caja img{
+  width: 90px;
+}
+
+#nuevo{
+  margin: auto;
+  width: 10%;
+
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.navi li a {
+  background:#D4A402;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+
+.navi li a:hover {
+  background:blue;
+}
+.navi > li {
+  float: left;
+}
+.navi li ul {
+  display: none;
+  position:absolute;
+  min-width: 140px;
+}
+
+.navi li:hover > ul{
+  display: block;
+}
+
+article #main-col{
+  float: left;
+  width: 50%;
+
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  background: #fff;
+  text-align:center;
+}
